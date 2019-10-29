@@ -1,34 +1,17 @@
-body {
-	background-color: blue;
-}
-
-img {
-
-	display: inline-block;
-}
-
-button {
-	color: gray;
-	width: 50px;
+#page {
+	background-color: red;
+	width: 20px;
 	height: 40px;
 
+	
+}
+li {
+	color: white;
+	}
+
+#in {
+	color: blue;
 }
 
-#firstbutton {
-	font-family: serif;
-}
 
-#secoundbutton {
-	font-family: serif;
-}
-
-
-.imagesblock {
-	display: flex;
-	flex-direction: row;
-}
-
-.imagesblock {
-	margin: 100px 100px;
-}
 
