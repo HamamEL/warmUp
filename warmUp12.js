@@ -22,3 +22,15 @@ Technical Details
     -The maximum size of a range will be 100 integers
     -The starting number of a range will be: 0 < n < 100
  */
+ function(inputString,integer){
+    var x = [];
+    var maximum = ''; 
+    var minimum = ''; 
+    for( )
+
+ }
+// first we have to irrtate over the the input string length 
+//if the input length at the index i is a number we will and it is bigger than zero 
+//push the number  and increment it by 1 
+
+ 
