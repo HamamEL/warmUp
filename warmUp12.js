@@ -22,15 +22,25 @@ Technical Details
     -The maximum size of a range will be 100 integers
     -The starting number of a range will be: 0 < n < 100
  */
- function(inputString,integer){
-    var x = [];
-    var maximum = ''; 
-    var minimum = ''; 
-    for( )
 
- }
-// first we have to irrtate over the the input string length 
-//if the input length at the index i is a number we will and it is bigger than zero 
-//push the number  and increment it by 1 
+ 
+function mysteryRange(){
+    
+var newarr = inputString.split('')
+var x = 1;
+for (let i =0; i <inputString.length; i ++){
+    if (newarr[i]== x){
+        var y = x +''+ newarr[i + 1];
+        newarr.splice(i,2,y);
+
+    }
+    
+}
+for (let i = 0; i <newarr.length; i ++){
+    newarr[i] = Number(newarr[i]);
+}
+return [Math.min(...newarr),Math.max(...newarr)];
+}
+
 
  
