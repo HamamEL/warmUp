@@ -16,6 +16,7 @@
             C          100
             D          500
             M          1,000 
+
     
     2. Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
         Examples:
@@ -30,4 +31,67 @@
             filter_list([1,2,'a','b']) == [1,2]
             filter_list([1,'a','b',0,15]) == [1,0,15]
             filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+        
+            ---
+
 */
+function solution(roman) {
+
+  var digit = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000
+  };
+
+  var convert = 0;
+  var input = roman.split('');
+
+  for (var i = 0; i < input.length; i++) {
+    var currentLetter =digit[input[i]];
+    var nextLetter =digit[input[i + 1]];
+    if (currentLetter === undefined) {
+      return ' ';
+    } else {
+      if (currentLetter < nextLetter) {
+        convert += nextLetter - currentLetter;
+        i++;
+      } else {
+        convert += currentLetter;
+      }
+    }
+  };
+
+  return convert;
+}
+
+function toCamelCase(str){
+  if(str.indexOf("-") > -1) {
+     var arr=str.split("-");
+   }else if(str.indexOf("_") > -1){
+     var arr=str.split("_");
+   }
+  newStr=arr.map(function(element){
+                   return element[0].toUpperCase() + element.slice(1);})
+            .join("");
+  return finalStr = newStr[0]!==str[0] ? 
+                    str[0] + newStr.slice(1) : 
+                    newStr;
+}
+
+
+
+
+
+
+
+function take(array){
+    var x = [];
+    for (let i = 0; i <array.length; i ++){
+        if ( x > 0; )
+
+    }
+}
