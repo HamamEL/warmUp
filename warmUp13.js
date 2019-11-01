@@ -88,10 +88,10 @@ function toCamelCase(str){
 
 
 
-function take(array){
-    var x = [];
-    for (let i = 0; i <array.length; i ++){
-        if ( x > 0; )
 
-    }
-}
+function filter_list(array){
+   return array.filter(function(val){
+     return  typeof val === 'number';
+       
+    });
+    
