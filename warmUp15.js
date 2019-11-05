@@ -4,3 +4,9 @@
 //
 //
 // Note : you can`t use any built-in functions .
+function reverseStr(string) {
+return string.split(' ').reverse().toString()
+}
+reverseStr("hi there how is the weather today")
+
+
