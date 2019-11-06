@@ -16,3 +16,16 @@
 // Constraints:
 // 1 <= text.length <= 10^4
 // text consists of lower case English letters only.
+function instance(string){
+	var maximumnumber = 0;
+	for (var i = 0; i <string.length; i++){
+		for (var j = i +1 ; j <string.length; j++){
+			
+			x = x + i;
+
+
+			}
+		}
+	}
+
+
